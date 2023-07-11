@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Outfit:wght@600&display=swap');
+
+
+.skills-container {
+    color: white;
+    height: 110vh;
+    width: 100wh;
+    font-family: 'Outfit', sans-serif;
+}
+/* this is the parent container which has it all */
+
+.skills-title{
+    width: 100%;
+    background-color: #2f2f2f; /* this is the div and under it is the title */
+    height: 16rem;
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+
+.skills-title h1{
+    padding: 60px;
+    font-size: 6rem;
+    width: 50rem;
+}
+
+.skills-description {
+    position: relative;
+    top: 50px;
+}
+.skills-description h3::after{ /* this is used to give the slight underline to the what can i do h3 */
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #ffffff;
+    width: 60px;
+    height: 2px;
+    border-radius: 10px;
+}
+
+
+.abilities {
+    position: relative;
+    left: 50px;
+    top: 30px;
+
+}
+.abilities-icon{
+    position: relative;  /* the abilities is for the main div which has the chunck of text and the icon is the one next to each title */
+    padding-right: 30px;
+}
+
+.abilities-subTitle {
+    position: relative;
+    padding-top: 15px;
+}
+.abilities-p{
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.7; /* changing the opacity is what gives it the color */
+}
+
+/* done with the description half know going to the reports */
+
+.skills-reports {
+    position: relative;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.skills-reports h6 {
+    position: relative;
+    top: 30px;
+    bottom: 5px;
+}
+
+.skills-reports h3::after {
+        content: "";
+        position: absolute;
+        background-color: #ffffff; /* also here to give the slight underline */
+        top: 30px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        border-radius: 10px;
+}
+
+.skills-area {
+    padding-top: 20px;
+}
+
+.skills-reports small {
+    padding-left: 500px;
+    font-family: sans-serif; /* this is the small percentage above the progress bar */
+    opacity: 0.7;
+
+}
+
+.coding-bar {
+    height: 15px;
+    border: 1px solid #444444;
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+  }
+  /* ^ is the bars outstide border and down is the bar it self */
+  .coding-bar-inside {
+    position: absolute;
+    height: 7px;
+    border-radius: 100px;
+    margin: 2px;
+}
+  

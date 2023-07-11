@@ -1,0 +1,1025 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+
+
+
+
+@media ( max-width : 550px){
+
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+        
+    .navbar-container{
+        position: fixed;
+        background-color: blue;
+
+    }
+
+    .nav-container{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 85%;
+        height: 80px;
+    }
+
+    .nav-items{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-ul{        /*this is the ul nav*/
+        padding-right: 5px;
+    }
+    
+    .nav-link{
+        font-size:15px; /*these are the navs*/
+    }
+    .nav-link:hover{
+        font-size: 20px;
+    }
+
+    /* for the time bieng the navbar is just fine */
+
+    .elipse-img{
+        width: 15rem;
+        margin-bottom: 30px;
+    }
+
+    .Home-container {
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20rem;
+        align-items: center;
+        overflow: hidden;
+      }
+      .intro{
+        flex-direction: column;
+
+      }
+      .intro-div{
+
+        flex-direction: column;
+        width: 20rem;
+        height: 30rem;
+      }
+      .container2{
+        flex-direction: column;
+      }
+
+      /* now we are done with the home */
+
+/* -------------------------------------------------------------- */
+
+
+      .skills-container{
+        height: 90vh;
+      }
+
+      .skills-title{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 6rem;
+        width: 100%;
+    }
+    
+    .skills-title h1{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+    }
+    /* done with the skills title */
+
+    .skills-description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;   
+    }
+    .skills-description h3 {
+        position: relative;
+        font-size: large;
+    }
+    /* done with the skills description h3 */
+
+    .skills-mini-container{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+
+.abilities {
+    position: relative;
+    font-size: 8px;
+    left: 0;
+    top: 0;
+
+}
+
+.abilities-subTitle {
+    font-size: 9px;
+    position: relative;
+    padding-top: 10px;
+}
+.abilities-p{
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.7; /* changing the opacity is what gives it the color */
+}
+
+/* done with the description half know going to the reports */
+
+/*###########################################################*/
+
+    .skills-reports {
+        position: relative;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+
+    .skills-area {
+        padding-top: 2px;
+    }
+
+    .skills-reports small {
+        padding-left: 100px;
+    }
+
+    .coding-bar {
+        height: 15px;
+        border: 1px solid #444444;
+        background-color: transparent;
+        border-radius: 10px;
+        position: relative;
+    }
+  /* ^ is the bars outstide border and down is the bar it self */
+    .coding-bar-inside {
+        position: absolute;
+        height: 7px;
+        border-radius: 100px;
+        margin: 2px;
+    }
+
+/* done with the skills */
+
+/* -------------------------------------------------------------- */
+
+    .projects-container{
+        height: 100vh;
+    }
+
+    .projects-title {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 6rem;
+        width: 100%;
+    }
+    .titleApear{
+        animation-name: leftToRight;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        width: 100%;
+        color: white; /* this is used in both the projects and the contact page title */
+    }
+
+    .projects-title h1{
+        padding: 60px;
+        font-size: 2rem;
+    }
+
+
+/* the project animation on hover */
+
+    .project {
+        position: relative;
+        display: block;
+        animation-name: BigToSmall;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+        width: 120px;
+    }
+
+
+    .project img{
+        border-radius: 10px;
+        display: block;
+        width: 110px;
+        margin-right: 10px;
+    }
+    .overlay {
+        width: 110px;
+        height: 100%;
+    }
+
+
+/* so all the above are just to make the cool hover effect on the project */
+  
+    .overlay-btn{
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
+    }
+
+    .overlay-txt h3 {
+        font-size: 7px;
+        padding-top: 46px;
+    }
+    .overlay-txt h1 {
+        font-size: 7px;
+        padding-bottom: 90px;
+    }
+
+/* done with the projects */
+
+/* -------------------------------------------------------------- */
+
+
+
+    .contact-container {
+        height: 100vh;
+    }
+
+    .contact-map{
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact-details{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 300px;
+        height: 50vh;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .all-contact-details{
+        margin: 10px;
+        width: 40px;
+    }
+
+    .contact-little-details p{
+        width: 100px;
+        color: white;
+        margin-left: 2px;
+        margin-top: 0px;
+    }
+
+    .contact-icons{
+        width: 20px;
+    }
+
+
+    .contact-little-details p{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 10px;
+    }
+
+    .contact-form-withTitle{
+        margin-left: 0px;
+        width: 200px;
+    }
+/* the form actually starts here */
+    .contact-form{
+        margin-top: 5px;
+        margin-left: 1rem;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.contact-info{
+    width: 10rem;
+    height: 40px;
+    margin: 10px;
+    font-size: 13px;
+}
+.message {
+    height: 10rem;
+}
+
+
+.submit-btn{
+    position: relative;
+    width: 160px;
+}
+
+
+
+}
+
+/*##########################################################################################################################################*/
+
+
+
+
+
+@media (min-width : 560px) and ( max-width : 920px){
+
+
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    .nav-container{
+        justify-content: space-between;
+    }
+    .navbar-container{
+        position: fixed;
+
+    }
+    .logo{
+        width: 80px;
+    }
+
+    .nav-ul{        /*this is the ul nav*/
+        padding-right: 5px;
+    }
+    
+    .nav-link{
+        font-size:20px; /*these are the navs*/
+    }
+    .nav-link:hover{
+        font-size: 25px;
+    }
+
+    /* for the time bieng the navbar is just fine */
+
+    .Home-container {
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 10rem;
+        align-items: end;
+
+      }
+
+    .elipse-img{
+        width: 20rem;
+        margin-bottom: 30px;
+    }
+
+      .intro{
+        flex-direction: column;
+      }
+      .intro h6{
+        font-size: x-large;
+      }
+      .intro h1{
+        font-size: xx-large;
+      }
+      .intro p {
+        font-size: large;
+      }
+
+      .intro-div{
+
+        flex-direction: column;
+        width: 40rem;
+        height: 30rem;
+      }
+      .container2{
+        flex-direction: column;
+      }
+
+      /* now we are done with the home */
+
+/* -------------------------------------------------------------- */
+
+
+      .skills-container{
+        height: 70vh;
+      }
+
+      .skills-title{
+        display: flex;
+        width: 110%;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 8rem;
+        width: 100%;
+    }
+    
+    .skills-title h1{
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+    }
+    /* done with the skills title */
+
+    .skills-description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start; 
+    }
+    .skills-description h3 {
+        position: relative;
+        font-size: large;
+    }
+    /* done with the skills description h3 */
+
+    .skills-mini-container{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+
+.abilities {
+    position: relative;
+    font-size: 7px;
+    left: 0;
+    top: 0;
+
+}
+
+.abilities-subTitle {
+    font-size: 1rem;
+    position: relative;
+    padding-top: 10px;
+}
+.abilities-p{
+    font-size: 0.8rem;
+    font-family: outfit, sans-serif;
+    color: white;
+    opacity: 0.7; /* changing the opacity is what gives it the color */
+}
+
+/* done with the description half know going to the reports */
+
+/*###########################################################*/
+
+    .skills-reports {
+        position: relative;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+
+    .skills-area {
+        padding-top: 10px;
+    }
+
+    .skills-reports small {
+        padding-left: 270px;
+    }
+
+    .coding-bar {
+        width: 20rem;
+        height: 15px;
+        border: 1px solid #444444;
+        background-color: transparent;
+        border-radius: 10px;
+        position: relative;
+    }
+  /* ^ is the bars outstide border and down is the bar it self */
+    .coding-bar-inside {
+        position: absolute;
+        height: 7px;
+        border-radius: 100px;
+        margin: 2px;
+    }
+
+/* done with the skills */
+
+/* -------------------------------------------------------------- */
+
+    .projects-container{
+        height: 60vh;
+    }
+
+    .projects-title {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 8rem;
+        width: 100%;
+    }
+    .titleApear{
+        animation-name: leftToRight;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        width: 100%;
+        color: white; /* this is used in both the projects and the contact page title */
+    }
+
+    .projects-title h1{
+        padding: 60px;
+        font-size: 3rem;
+    }
+
+
+/* the project animation on hover */
+
+    .project {
+        position: relative;
+        display: block;
+        animation-name: BigToSmall;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+        width: 220px;
+    }
+
+
+    .project img{
+        border-radius: 10px;
+        display: block;
+        width: 200px;
+        margin-right: 10px;
+    }
+    .overlay {
+        width: 200px;
+        height: 100%;
+    }
+
+
+/* so all the above are just to make the cool hover effect on the project */
+  
+    .overlay-btn{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .overlay-txt h3 {
+        font-size: 10px;
+        padding-top: 46px;
+    }
+    .overlay-txt h1 {
+        font-size: 15px;
+        padding-bottom: 90px;
+    }
+
+/* done with the projects */
+
+/* -------------------------------------------------------------- */
+
+
+
+    .contact-container {
+        height: 80vh;
+    }
+
+    .contact-map{
+        position: relative;
+        width: 100%;
+    }
+
+    .contact-details{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .all-contact-details{
+        margin: 10px;
+        width: 40px;
+    }
+
+    .contact-little-details h6{
+        font-size: 1.5rem;
+    }
+
+    .contact-little-details p{
+        width: 200px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 2px;
+        margin-top: 0px;
+    }
+
+    .contact-icons{
+        width: 30px;
+    }
+
+
+
+    .contact-form-withTitle{
+        margin-left: 0px;
+        width: 200px;
+    }
+/* the form actually starts here */
+    .contact-form{
+        margin-top: 5px;
+        margin-right: 3rem;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.contact-info{
+    width: 20rem;
+    height: 40px;
+    margin: 10px;
+    font-size: 13px;
+}
+.message {
+    height: 10rem;
+}
+
+
+.submit-btn{
+    position: relative;
+    width: 160px;
+}
+
+.btnApear { /* I assign this className to the button when the scrollY is more than 710 */
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+}
+.arrow{
+    font-size: 40px;
+}
+
+
+
+}
+
+/*##########################################################################################################################################*/
+
+
+
+@media (min-width : 950px) and ( max-width : 1300px) {
+
+    .nav-container{
+        width: 96%;
+        justify-content: space-between;
+    }
+    
+    .navbar-container{
+        position: fixed;
+
+    }
+    .logo{
+        width: 80px;
+    }
+
+    .nav-ul{        /*this is the ul nav*/
+        padding-right: 0px;
+    }
+    
+    .nav-link{
+        font-size:25px; /*these are the navs*/
+    }
+    .nav-link:hover{
+        font-size: 30px;
+    }
+
+    /* for the time bieng the navbar is just fine */
+
+    .Home-container {
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 10rem;
+        align-items: end;
+
+      }
+
+    .elipse-img{
+        width: 20rem;
+        margin-bottom: 30px;
+    }
+
+      .intro{
+        flex-direction: column;
+      }
+      .intro h6{
+        font-size: x-large;
+      }
+      .intro h1{
+        font-size: xx-large;
+      }
+      .intro p {
+        font-size: large;
+      }
+
+      .intro-div{
+
+        flex-direction: column;
+        width: 40rem;
+        height: 30rem;
+      }
+      .container2{
+        flex-direction: column;
+      }
+
+      /* now we are done with the home */
+
+/* -------------------------------------------------------------- */
+
+
+      .skills-container{
+        height: 120vh;
+      }
+
+      .skills-title{
+        display: flex;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 8rem;
+        width: 100%;
+    }
+    
+    .skills-title h1{
+        color: rgb(255, 255, 255);
+        font-size: 5rem;
+    }
+    /* done with the skills title */
+
+    .skills-description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start; 
+    }
+    .skills-description h3 {
+        position: relative;
+        font-size: large;
+    }
+    /* done with the skills description h3 */
+
+    .skills-mini-container{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+
+.abilities {
+    position: relative;
+    font-size: 8px;
+    left: 0;
+    top: 0;
+
+}
+
+.abilities-subTitle {
+    font-size: 1.5rem;
+    position: relative;
+    padding-top: 10px;
+}
+.abilities-p{
+    font-size: 1rem;
+    font-family: outfit, sans-serif;
+    color: white;
+    opacity: 0.7; /* changing the opacity is what gives it the color */
+}
+
+/* done with the description half know going to the reports */
+
+/*###########################################################*/
+
+    .skills-reports {
+        position: relative;
+        margin-left: 35px;
+        margin-top: 30px;
+    }
+
+
+    .skills-area {
+        padding-top: 20px;
+    }
+
+    .skills-reports small {
+        padding-left: 350px;
+    }
+
+    .coding-bar {
+        width: 25rem;
+        height: 15px;
+        border: 1px solid #444444;
+        background-color: transparent;
+        border-radius: 10px;
+        position: relative;
+    }
+  /* ^ is the bars outstide border and down is the bar it self */
+    .coding-bar-inside {
+        position: absolute;
+        height: 7px;
+        border-radius: 100px;
+        margin: 2px;
+    }
+
+/* done with the skills */
+
+/* -------------------------------------------------------------- */
+
+    .projects-container{
+        height: 100vh;
+    }
+
+    .projects-title {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f2f2f; /* this is the div and under it is the title */
+        height: 8rem;
+        width: 100%;
+    }
+    .titleApear{
+        animation-name: leftToRight;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        width: 100%;
+        color: white; /* this is used in both the projects and the contact page title */
+    }
+
+    .projects-title h1{
+        padding: 60px;
+        font-size: 5rem;
+    }
+
+
+/* the project animation on hover */
+
+    .project {
+        position: relative;
+        display: block;
+        animation-name: BigToSmall;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+        width: 340px;
+    }
+
+
+    .project img{
+        border-radius: 10px;
+        display: block;
+        width: 320px;
+    }
+    .overlay {
+        width: 320px;
+        height: 100%;
+    }
+
+
+/* so all the above are just to make the cool hover effect on the project */
+  
+    .overlay-btn{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .overlay-txt h3 {
+        font-size: 10px;
+        padding-top: 46px;
+    }
+    .overlay-txt h1 {
+        font-size: 15px;
+        padding-bottom: 90px;
+    }
+
+/* done with the projects */
+
+/* -------------------------------------------------------------- */
+
+
+
+    .contact-container {
+        height: 80vh;
+    }
+
+    .contact-map{
+        position: relative;
+        width: 100%;
+    }
+
+    .contact-details{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .all-contact-details{
+        margin: 10px;
+        width: 40px;
+    }
+
+    .contact-little-details h6{
+        font-size: 1.5rem;
+    }
+
+    .contact-little-details p{
+        width: 200px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 2px;
+        margin-top: 0px;
+    }
+
+    .contact-icons{
+        width: 30px;
+    }
+
+
+
+    .contact-form-withTitle{
+        margin-left: 0px;
+        width: 200px;
+        margin-left: 200px;
+        margin-bottom: 100px;
+    }
+/* the form actually starts here */
+    .contact-form{
+        margin-top: 5px;
+        margin-left: 1rem;
+        color: white;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.contact-info{
+    width: 20rem;
+    height: 40px;
+    margin: 10px;
+    font-size: 13px;
+}
+.message {
+    height: 10rem;
+}
+
+
+.submit-btn{
+    position: relative;
+    width: 160px;
+}
+
+.btnApear { /* I assign this className to the button when the scrollY is more than 710 */
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+.arrow{
+    font-size: 23px;
+}
+
+
+
+}
+
+/*##########################################################################################################################################*/
+

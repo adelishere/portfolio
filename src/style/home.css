@@ -1,0 +1,145 @@
+@keyframes moveLeft {
+    0% { left: -300px; opacity: 0; }
+    100% { left: 0; opacity: 1; }
+  }
+  @keyframes moveRight {
+    0% { right: -100px; opacity: 0; width: 100px; }
+    100% { right: 0; opacity: 1; width: 40px; }
+  }
+  @keyframes arrowAnimation {
+    0%{margin-left: 80px;}
+    50%{margin-left: 40px;}
+    100%{margin-left: 80px;}
+  }
+  @keyframes thunderAnimation{
+    0%{margin-top: 100px;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 100px;}
+  }
+  
+
+  
+
+
+
+.Home-container{
+    margin-top: 20vh;
+    height: 90vh;
+    width: 100%;
+}
+
+.backToTop {  /* this is the button which takes you to the top */
+    position: fixed;
+    left: 90%;
+    top: 90vh;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    size: 50px;
+    pointer-events: none;
+}
+
+
+  
+.btnApear { /* I assign this className to the button when the scrollY is more than 710 */
+    background-color: rgb(84, 84, 85);
+    border-radius: 30px;
+    color: rgb(116, 116, 116);
+    pointer-events: auto;
+    animation-name: moveRight;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    padding-bottom: 6px;
+    z-index: 1;
+}
+
+.btnApear:hover {
+    color: white;
+}
+
+
+.elipse-img {
+    position: relative;
+    width: 80%;
+    background-image: url("../assets/imgBg.png");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;   
+}
+.Home-developer{
+    width: 16rem;
+    display:flex ;
+    align-items: center;
+    justify-content: start;
+}
+.developer-arrow{
+    position: relative;
+    margin-left: 40px;
+    animation-name: arrowAnimation ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.Home-thunder {
+    animation-name: thunderAnimation ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.intro h6 { /* this is the frontend developer  */
+    color: #868686;
+}
+
+.intro h1, p {
+    color: white;
+}
+
+.start-txt{  /* this is the let's start text */
+    position: relative;
+    margin-top: 30vh;
+    opacity: 0;
+}
+.start-txt .arrow {
+    padding-left: 90px;
+}
+.start-animation { /* this class is added when scrollY is above 50 so the animation appears */
+    opacity: 1 ;
+    animation-name: moveLeft;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+.portfolio {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: small ;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 16vh;
+    border: solid rgb(0, 191, 255);
+    border-radius: 16px;
+    margin-right: 10px; /* this is the portfolio button */
+}
+
+.intro .portfolio:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 191, 255);
+}
+
+.contact {
+    background-color: rgb(44, 44, 44); /* and this is the contact button */
+    color: white;
+    font-size: small ;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 16vh;
+    border: solid rgb(255, 0, 0);
+    border-radius: 16px;
+}
+.intro .contact:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 0, 0);
+}
